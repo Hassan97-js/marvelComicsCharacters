@@ -1,6 +1,5 @@
 .vscode
 # compiled output
-/dist
 /tmp
 /out-tsc
 
