@@ -1,0 +1,9 @@
+footer {
+  height: 118px;
+  background-color: $var-master-color;
+  @include gridCenter;
+  &::selection {
+    background-color: #000;
+    color: white;
+  }
+}

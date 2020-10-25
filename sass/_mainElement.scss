@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap");
+main {
+  min-height: calc(90.4vh - 118px);
+  padding: 20px;
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #395ab6d3;
+    font-family: "Lemonada", cursive;
+    &::selection {
+      background-color: #395ab6d3;
+      color: white;
+    }
+  }
+  #charactersListWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .character {
+    background: #ffdcdf93;
+    min-height: 470px;
+    list-style-type: none;
+    text-align: center;
+    border: 4px solid $var-master-color;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character > h2,
+  .character > img,
+  .character > a {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .character > h2 {
+    color: #d83481de;
+    font-family: "Lemonada", cursive;
+    font-size: 1.3rem;
+    &::selection {
+      background-color: #d83481de;
+      color: white;
+    }
+  }
+
+  .character > img {
+    max-height: 320px;
+    border: 4px solid $var-master-color;
+    margin: 12px;
+  }
+
+  .character > a {
+    background: $var-secondary-color;
+    text-decoration: none;
+    width: 190px;
+    padding: 0.8rem 0;
+    color: $var-master-color;
+    font-weight: 600;
+    transition: 0.2s;
+    border: 1px solid transparent;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .character > a:hover {
+    background: $var-master-color;
+    color: $var-secondary-color;
+    border: 1px solid $var-secondary-color;
+  }
+
+  .character > a:focus {
+    border: 3px solid #395ab6d3;
+  }
+}
