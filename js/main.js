@@ -41,12 +41,12 @@ const displayMarvilCharacters = characters => {
             } else {
                 resultImgPath = character.thumbnail.path + "/portrait_incredible.jpg";
             }
-            const charactersURLS = character.urls;
+            let charactersURLS = character.urls;
             let charactersProfileURLS;
             if (charactersURLS.length === 2) {
-                charactersProfileURLS = character.urls[0].url;
+                charactersProfileURLS = charactersURLS[0].url;
             } else {
-                charactersProfileURLS = character.urls[1].url;
+                charactersProfileURLS = charactersURLS[1].url;
                 if (character.id === 1010846) {
                     charactersProfileURLS = "https://www.marvel.com/characters/aegis-trey-rollins";
                 }
